@@ -25,12 +25,8 @@ df.head()
 def reverseGeocode(latlng):   
     result = {}
     url = 'https://maps.googleapis.com/maps/api/geocode/json'
-    #apikey = 'AIzaSyDIiqF9I_8weqX4U3TYH05ccSi83QyFMjk' #Project 1
-    #apikey = 'AIzaSyBwPWc-6wVc-7XLgbhFd7YZv4_mz_Lh2T4' #Project 2
-    #apikey = 'AIzaSyDc3XEC7i92MkYsOHDRWJ7stqi_WrPk4KI' #Project 3
-    apikey = 'AIzaSyDNM9Url6ezAhDVm7JphVc35u66S7equrE' #Project 4
-    #apikey = 'AIzaSyBljb5-Bo3UM6bXjjZm88NMrKeMD0yzhUY' #Project 5
-    #apikey = 'AIzaSyDM1lYCjXQP4R3Ro--7H9MJic9Yddhz1PM' #Project 6 tester API
+    #apikey = 'API_KEY_GOES_HERE' #Project 1
+
 
     try:
 		response = requests.get(url, params={"key":apikey, "latlng":latlng})
